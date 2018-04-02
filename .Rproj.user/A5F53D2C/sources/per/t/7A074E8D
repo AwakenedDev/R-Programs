@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1522005735570.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1347083337",
+    "id" : "7A074E8D",
+    "lastKnownWriteTime" : 1522011517,
+    "last_content_update" : 1522011517948,
+    "path" : "~/R Programs/program1/Jigarprogram1.R",
+    "project_path" : "program1/Jigarprogram1.R",
+    "properties" : {
+        "cursorPosition" : "11,71",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : true,
+    "source_window" : "",
+    "type" : "r_source"
+}
