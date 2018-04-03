@@ -9,7 +9,7 @@ main <- function() {
     if (x == "Insert") {
       tryCatch ({
         y = as.double(response[[1]][2])
-        myList <- c(myList, y)
+        myList <- append(myList, y)
         myList2 <- myList[order(sapply(myList, '[[', 1))]
         cat("\nThe array currently contains:\n")
         for (item in 1:length(myList2)) {
