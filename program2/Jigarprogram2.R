@@ -23,7 +23,7 @@ main <- function() {
       tryCatch ({
         y = as.double(response[[1]][2])
         myList <- myList[myList != y]
-        myList2 <- myList[order(sapply(myList, '[[', 1))]
+        myList2 <- myList[order(sapply(myList, '[[', 1))] #sort
         cat("\nThe array currently contains:\n")
         for (item in 1:length(myList2)) {
           cat(sprintf("Value[%i] = %0.5f\n", item, myList2[[item]]))
