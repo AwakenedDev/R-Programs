@@ -1,5 +1,3 @@
-require(ggplot2)
-require(reshape2)
 
 maxTemp <- function(weatherDF) {
   tMaxPosition <- which.max(weatherDF$V3)
