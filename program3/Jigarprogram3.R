@@ -1,5 +1,8 @@
+# @author Jigar D. Prajapati
+# This class contains the to do list (myList) and provides methods that modify the list as required
 Commands <- setRefClass("Commands",
 fields = list(
+  # declaration of variables
   myList = "list",
   myString = "character",
   number1 = "numeric",
@@ -9,15 +12,22 @@ fields = list(
     
  methods = list(
   
+  #this method displays the values in the list
+  # @return the list
   show = function() {
     return(myList)
   },
   
+  #in this method we add an item(i.e string, number e.t.c) to the end of the list)
+  #@param string to be added to the list
   add = function(string) {
     myString <<- string
     myList <<- append(myList, myString)
   },
   
+  #moves item num1 in the list to position num2
+  # @param number1
+  # @param number2
   move = function(num1, num2) {
     number1 <<- num1
     number2 <<- num2
@@ -30,6 +40,8 @@ fields = list(
     }
   },
   
+  #in this method we mark a specified item in the list
+  # @param number
   complete = function(num) {
     number <<- num
     if ((0 < number) && (number <= length(myList))) {
@@ -42,6 +54,7 @@ fields = list(
   
 ))
 
+#In main, we prompt the user for a command and then read the response and call the Commands' class
 main <- function() {
   toDoList = Commands$new()
   cat("\n* * * To Do List * * *\n")
@@ -55,7 +68,7 @@ main <- function() {
         listCopy <- toDoList$show()
         tryCatch({
           for (item in 1:length(listCopy)) {
-            cat(sprintf("%i = %s\n", item, listCopy[[item]]))
+            cat(sprintf("%i. %s\n", item, listCopy[[item]]))
           }
         },error = function(e) {
           cat("Nothing in the list")
@@ -90,7 +103,9 @@ main <- function() {
     a <- toString(response[[1]][1])
   
   }
+  
+  cat("\n* * * To Do List Ended * * *\n")
 }
 
-main()
+main() #call main when program runs
 

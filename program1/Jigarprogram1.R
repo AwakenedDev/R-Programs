@@ -41,4 +41,4 @@ main <-function(){
   ) 
 }
 
-main()
+main() #call main when program runs
