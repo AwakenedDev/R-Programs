@@ -1,4 +1,6 @@
 # Getting started with R
+* What is R? visit: https://www.r-project.org/about.html
+* To read more on R Programming Language visit: https://en.wikipedia.org/wiki/R_(programming_language)
 * To download R environment visit: https://www.r-project.org/
 * To download R-studio (Recommended IDE for R-Programming) visit: https://www.rstudio.com/
 
