@@ -21,9 +21,9 @@ main <-function(){
       
       #condition check for positive numbers
       if ((number>0)&(number<46)) {
-        start <- Sys.time() #calculate the start time
+        start <- as.numeric(Sys.time()) #calculate the start time
         fibNum <- fib(number)
-        finalTime <- Sys.time() - start #calculate the end time
+        finalTime <- as.numeric(Sys.time()) - start #calculate the end time
         cat(sprintf("\nFibonacci number %i is: %i\n", number, fibNum)) #print the fibonacci number the user wanted
         cat(sprintf("\nThis calculation required %f seconds\n", finalTime)) #print the total time
       }else {
