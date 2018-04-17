@@ -1,5 +1,5 @@
 # @author Jigar D. Prajapati
-#TicTacToe game (Computer vs. User) where the computer learns from its mistake.
+#TicTacToe game (Computer vs. User) where the computer learns from its mistake. If in windows change this to wherever your R-Programs folders is stored (e.g C:\...Desktop\)
 
 setwd("~/") #setting project directory
 
